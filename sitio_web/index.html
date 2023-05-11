@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro - Club América</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+		<img src="https://s3.us-west-2.amazonaws.com/v2.clubamerica.com.mx/portal/wp-content/uploads/2021/05/club-america.png" alt="Logo del Club Amérca">
+		<h1>Registro</h1>
+	</header>
+	<main>
+		<form action="procesar_registro.php" method="POST">
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+			</div>
+
+			<div class="form-group">
+				<label for="correo">Correo Electrónico:</label>
+				<input type="email" id="correo" name="correo" required>
+			</div>
+
+			<div class="form-group">
+				<label for="contrasena">Contraseña:</label>
+				<input type="password" id="contrasena" name="contrasena" required>
+			</div>
+            <input type="submit" value="Registrarse" >
+		</form>
+    
+			
+	</main>
+
+    <script>
+        document.getElementById("formulario_registro").onsubmit = function() {
+          window.location.href = "usuario_registrado.html";
+        }
+      </script>
+      
+	<footer>
+		<p>&copy; 2023 Club América</p>
+	</footer>
+</body>
+</html>
